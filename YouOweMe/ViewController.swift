@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var counter = 1
+    @IBOutlet weak var HWtextfield: UITextField!
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
+    @IBAction func helloworld_button(sender: AnyObject) {
+        print("hello world again !!")
+        HWtextfield.text = "Yo man "
+        textLabel.text = ""+String(counter)
+        counter++
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello world")
