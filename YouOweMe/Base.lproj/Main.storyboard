@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,21 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo6-gL-1Bd">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Hello World">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="helloworld_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bd1-dw-2d1"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallhaven-8987.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-Xs-rP0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="124" width="400" height="557"/>
+                                </variation>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-uF-9qX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="92" width="195" height="30"/>
+                                    <rect key="frame" x="103" y="52" width="195" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bX-cn-A0X">
@@ -39,43 +37,54 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="161" y="221" width="42" height="21"/>
+                                    <rect key="frame" x="306" y="56" width="42" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo6-gL-1Bd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.44579737759205956" green="0.78322435461956519" blue="0.75371485131113181" alpha="0.77000000000000002" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hello World">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="helloworld_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bd1-dw-2d1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Wo6-gL-1Bd" secondAttribute="centerX" constant="-0.5" id="7g1-lA-YqB"/>
-                            <constraint firstAttribute="centerX" secondItem="Wo6-gL-1Bd" secondAttribute="centerX" constant="-0.5" id="NFZ-fr-dhC"/>
-                            <constraint firstAttribute="centerY" secondItem="Wo6-gL-1Bd" secondAttribute="centerY" id="TZt-om-DZW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wo6-gL-1Bd" secondAttribute="trailing" constant="36" id="YZ8-s2-6fZ"/>
+                            <constraint firstItem="Wo6-gL-1Bd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="90" id="wcn-3Z-yRF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Wo6-gL-1Bd"/>
+                                <exclude reference="3TJ-Xs-rP0"/>
                                 <exclude reference="CWY-uF-9qX"/>
                                 <exclude reference="6bX-cn-A0X"/>
+                                <exclude reference="Wo6-gL-1Bd"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7g1-lA-YqB"/>
-                                <exclude reference="NFZ-fr-dhC"/>
-                                <exclude reference="TZt-om-DZW"/>
+                                <exclude reference="YZ8-s2-6fZ"/>
+                                <exclude reference="wcn-3Z-yRF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Wo6-gL-1Bd"/>
+                                <include reference="3TJ-Xs-rP0"/>
                                 <include reference="CWY-uF-9qX"/>
                                 <include reference="6bX-cn-A0X"/>
+                                <include reference="Wo6-gL-1Bd"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7g1-lA-YqB"/>
-                                <include reference="NFZ-fr-dhC"/>
-                                <include reference="TZt-om-DZW"/>
+                                <include reference="YZ8-s2-6fZ"/>
+                                <include reference="wcn-3Z-yRF"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="HWtextfield" destination="CWY-uF-9qX" id="hDU-NB-Dda"/>
+                        <outlet property="pictureBG" destination="3TJ-Xs-rP0" id="K4V-xc-JQV"/>
                         <outlet property="textLabel" destination="6bX-cn-A0X" id="qDA-eh-chP"/>
                     </connections>
                 </viewController>
@@ -83,4 +92,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="wallhaven-8987.jpg" width="1920" height="1080"/>
+    </resources>
 </document>

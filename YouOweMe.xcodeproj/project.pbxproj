@@ -13,6 +13,7 @@
 		8BF785F719F461D7006B4492 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF785F619F461D7006B4492 /* Images.xcassets */; };
 		8BF785FA19F461D7006B4492 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF785F819F461D7006B4492 /* LaunchScreen.xib */; };
 		8BF7860619F461D7006B4492 /* YouOweMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7860519F461D7006B4492 /* YouOweMeTests.swift */; };
+		8BF7861019F48A1B006B4492 /* wallhaven-8987.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7860F19F48A1B006B4492 /* wallhaven-8987.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8BF785FF19F461D7006B4492 /* YouOweMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouOweMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7860419F461D7006B4492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF7860519F461D7006B4492 /* YouOweMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouOweMeTests.swift; sourceTree = "<group>"; };
+		8BF7860F19F48A1B006B4492 /* wallhaven-8987.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallhaven-8987.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		8BF785EC19F461D7006B4492 /* YouOweMe */ = {
 			isa = PBXGroup;
 			children = (
+				8BF7860F19F48A1B006B4492 /* wallhaven-8987.jpg */,
 				8BF785EF19F461D7006B4492 /* AppDelegate.swift */,
 				8BF785F119F461D7006B4492 /* ViewController.swift */,
 				8BF785F319F461D7006B4492 /* Main.storyboard */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF7861019F48A1B006B4492 /* wallhaven-8987.jpg in Resources */,
 				8BF785F519F461D7006B4492 /* Main.storyboard in Resources */,
 				8BF785FA19F461D7006B4492 /* LaunchScreen.xib in Resources */,
 				8BF785F719F461D7006B4492 /* Images.xcassets in Resources */,

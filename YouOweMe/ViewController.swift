@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var counter = 1
     @IBOutlet weak var HWtextfield: UITextField!
     
+    @IBOutlet weak var pictureBG: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     
     @IBAction func helloworld_button(sender: AnyObject) {
